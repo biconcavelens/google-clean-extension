@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "Google Clean Search",
+  "version": "1.0",
+  "description": "Automatically adds &udm=14 to Google search URLs to disable AI results.",
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "*://www.google.com/search*",
+    "*://www.google.co.in/search*"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_title": "Google Clean Search"
+  },
+  "icons": {
+    "48": "icon.png"
+  },
+  "applications": {
+    "gecko": {
+      "id": "google-clean@extension",
+      "strict_min_version": "91.0"
+    }
+  }
+}
